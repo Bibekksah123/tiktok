@@ -1,0 +1,37 @@
+.videoWrap {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 9 / 16;
+  position: relative;
+  border-radius: 12px;
+  background-color: #000;
+  margin: 8px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  scroll-snap-align: start;
+}
+
+.videoPlay {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.videoWrap:hover .videoPlay {
+  filter: brightness(1.1);
+}
+
+@media (max-width: 768px) {
+  .videoWrap {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .videoWrap {
+    max-width: 100%;
+    margin: 4px;
+  }
+}
+
